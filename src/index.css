@@ -27,4 +27,5 @@ button:focus-visible {
 
 button:disabled {
   background-color: gray;
+  cursor: not-allowed
 }
