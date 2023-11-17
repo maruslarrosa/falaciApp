@@ -9,14 +9,15 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #646cff;
+  background-color: yellow;
+  color: black;
   cursor: pointer;
   transition: border-color 0.25s;
   margin: 5px 10px;
 }
 
 button:hover {
-  border-color: #646cff;
+  border-color: black;
 }
 
 button:focus,
