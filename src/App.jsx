@@ -1,13 +1,15 @@
-import './App.css'
 import { Provider } from 'react-redux';
 import { store } from './redux/store';
-import { ButtonContainer } from './components/ButtonContainer'
+import { ButtonContainer } from './components/ButtonContainer';
+import { Img } from './components/Img';
 
 function App() {
-
   return (
     <Provider store={store}>
-     <ButtonContainer />
+      <div className='main-container'>
+        <Img />
+        <ButtonContainer />
+      </div>
     </Provider>
   )
 }

@@ -1,6 +1,5 @@
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  background-color: lightgoldenrodyellow;
 }
 
 button {
@@ -15,13 +14,16 @@ button {
   transition: border-color 0.25s;
   margin: 5px 10px;
 }
+
 button:hover {
   border-color: #646cff;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
-button:disabled{
+
+button:disabled {
   background-color: gray;
 }

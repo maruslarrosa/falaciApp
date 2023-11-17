@@ -1,7 +1,31 @@
 .button-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.flip-img-animation {
+  animation: flipAnimation 1s infinite; // 1s duration, infinite loop
+}
+
+@keyframes flipAnimation {
+  0% {
+    transform: scaleX(1); // Initial state
   }
+
+  50% {
+    transform: scaleX(-1); // Midway state, flipped
+  }
+
+  100% {
+    transform: scaleX(1); // Final state, back to the original
+  }
+}
