@@ -13,7 +13,7 @@ export const Button = (props) => {
   useEffect(() => {
     const handleEnded = () => {
       dispatch(toggleAudio());
-      setIsDisabled(false); // Enable the button when audio ends
+      setIsDisabled(false);
     };
 
     audio.addEventListener('ended', handleEnded);
@@ -25,15 +25,15 @@ export const Button = (props) => {
 
   const initAudio = () => {
     dispatch(toggleAudio());
-    setIsDisabled(true); // Disable the button when audio starts playing
+    setIsDisabled(true);
     audio.play();
   };
 
   useEffect(() => {
     if (playing) {
-      setIsDisabled(true); // Disable the button when audio is playing
+      setIsDisabled(true);
     } else {
-      setIsDisabled(false); // Enable the button when audio stops playing
+      setIsDisabled(false);
     }
   }, [playing]);
 

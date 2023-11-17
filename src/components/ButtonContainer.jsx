@@ -3,8 +3,7 @@ import { nuevemm, brutoignorante, ctm, mevoy } from '../assets/audio'
 
 export const ButtonContainer = () => {
     return (
-
-        <div>
+        <div className='button-container'>
             <Button name="9mm" path={nuevemm} />
             <Button name="brutoignorante" path={brutoignorante} />
             <Button name="ctm" path={ctm} />
